@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .font-lato{
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+<body class="font-lato">
+    <header>
+        <nav class=" my-8 lg:bg-[#f85559] flex items-center justify-between w-[90%] mx-auto h-32 rounded-[600px] p-12">
+            <!-- menu -->
+            <div class="lg:text-white flex-1 absolute -top-60 lg:static">  
+                <ul class="flex list-none font-medium text-lg justify-between">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+
+            <!-- logo -->
+            <div class=" lg:text-white flex-1 flex justify-center items-center gap-4">
+                <img src="resouces/logo.png" alt="">
+                <h3 class="text-4xl font-bold">Fruit Burst</h3>
+            </div>
+
+            <!-- search -->
+            <div class="lg:text-white flex-1 flex ">
+                <div class="absolute -top-60 md:static">
+                    <input class=" w-80 h-14 rounded-[50px] p-5"  type="search" placeholder="Search here" name="text" id="">
+                    <i class="fa-solid fa-magnifying-glass text-black -ml-10 mt-5"></i>
+                </div>
+           
+            <!-- tootgle bar. copied from daisy ui dropdown. extra added md:hidden and img in the place of click here text   -->
+                <details class="dropdown ml-40">
+                    <summary class="m-1 btn  lg:hidden"><img  class="w-5" src="resouces/menu.png" alt=""></summary>
+                    <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </details>
+            </div>
+
+
+
+        </nav>
+    </header>
+    
+</body>
+</html>
