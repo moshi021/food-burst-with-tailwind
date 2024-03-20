@@ -26,9 +26,9 @@
 </head>
 <body class="font-lato">
     <header>
-        <nav class=" my-8 lg:bg-[#f85559] flex items-center justify-between w-[90%] mx-auto h-32 rounded-[600px] p-12">
+        <nav class=" my-8 md:bg-[#f85559] flex items-center justify-between lg:w-[90%] mx-auto h-32 rounded-[600px] p-4 lg:p-12">
             <!-- menu -->
-            <div class="lg:text-white flex-1 absolute -top-60 lg:static">  
+            <div class="text-white md:flex-1  absolute -top-60 lg:static">  
                 <ul class="flex list-none font-medium text-lg justify-between">
                     <li><a href="">Home</a></li>
                     <li><a href="">About Us</a></li>
@@ -38,33 +38,115 @@
             </div>
 
             <!-- logo -->
-            <div class=" lg:text-white flex-1 flex justify-center items-center gap-4">
-                <img src="resouces/logo.png" alt="">
-                <h3 class="text-4xl font-bold">Fruit Burst</h3>
+            <div class=" text-black lg:flex-1 md:text-white flex lg:justify-center items-center gap-4">
+                <img class="w-10" src="resouces/logo.png" alt="">
+                <h3 class="text-2xl md:text-4xl font-bold">Fruit Burst</h3>
             </div>
 
             <!-- search -->
-            <div class="lg:text-white flex-1 flex ">
+            <div class=" flex  md:flex-1 md:ml-5">
                 <div class="absolute -top-60 md:static">
-                    <input class=" w-80 h-14 rounded-[50px] p-5"  type="search" placeholder="Search here" name="text" id="">
-                    <i class="fa-solid fa-magnifying-glass text-black -ml-10 mt-5"></i>
+                    <input class="w-0 h-0 md:w-80 md:h-14 rounded-[50px] p-5"  type="search" placeholder="Search here" name="text" id="">
+                    <i class="fa-solid fa-magnifying-glass text-black ml-0 md:-ml-10 mt-5"></i>
                 </div>
+            </div>
            
             <!-- tootgle bar. copied from daisy ui dropdown. extra added md:hidden and img in the place of click here text   -->
-                <details class="dropdown ml-40">
-                    <summary class="m-1 btn  lg:hidden"><img  class="w-5" src="resouces/menu.png" alt=""></summary>
-                    <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">All Fruits</a></li>
-                    </ul>
-                </details>
+            <div class=" flex-1 ml-16 lg:hidden ">
+                <img class="w-8" src="resouces/menu.png" alt="">
             </div>
+            
 
 
 
         </nav>
+
+        <!-- banner  -->
+        <section class="w-[90%] mx-auto">
+            <div class="carousel w-full">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="relative text-center text-white ">
+                    <img src="resouces/banner1.png" class="w-full h-full brightness-50" />
+                    <!-- buton and text on banner -->
+                    <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] space-y-5">
+                        <h1 class="text-7xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                        <p class="text-lg font-medium">We supply highly quality organic products</p>
+                        <button class="bg-[#f85559] p-6 text-[20px] font-extrabold text-center rounded-lg">Shop Now</button>
+                    </div>
+
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+
+                </div>
+
+
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="relative text-center text-white ">
+                      <img src="resouces/banner2.png" class="w-full h-full brightness-50" />
+                      <!-- buton and text on banner -->
+                      <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] space-y-5">
+                          <h1 class="text-7xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                          <p class="text-lg font-medium">We supply highly quality organic products</p>
+                          <button class="bg-[#f85559] p-6 text-[20px] font-extrabold text-center rounded-lg">Shop Now</button>
+                      </div>
+  
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide1" class="btn btn-circle">❮</a> 
+                      <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+  
+                </div> 
+
+                  <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="relative text-center text-white ">
+                      <img src="resouces/banner3.png" class="w-full h-full brightness-50" />
+                      <!-- buton and text on banner -->
+                      <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] space-y-5">
+                          <h1 class="text-7xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                          <p class="text-lg font-medium">We supply highly quality organic products</p>
+                          <button class="bg-[#f85559] p-6 text-[20px] font-extrabold text-center rounded-lg">Shop Now</button>
+                      </div>
+  
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide2" class="btn btn-circle">❮</a> 
+                      <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+  
+                </div>
+                  
+                  
+                  <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="relative text-center text-white ">
+                      <img src="resouces/banner4.png" class="w-full h-full brightness-50" />
+                      <!-- buton and text on banner -->
+                      <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] space-y-5">
+                          <h1 class="text-7xl font-extrabold ">Exotic tastes at your <br> doorstep</h1>
+                          <p class="text-lg font-medium">We supply highly quality organic products</p>
+                          <button class="bg-[#f85559] p-6 text-[20px] font-extrabold text-center rounded-lg">Shop Now</button>
+                      </div>
+  
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                      <a href="#slide3" class="btn btn-circle">❮</a> 
+                      <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+  
+                
+                </div>
+                
+            </div>
+        </section>
+
+
     </header>
     
 </body>
