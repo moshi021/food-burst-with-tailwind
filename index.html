@@ -7,6 +7,8 @@
     <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    
 
     <!-- lato font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +26,7 @@
     </style>
 
 </head>
+
 <body class="font-lato">
     <header class="my-8">
         <nav class=" my-8 md:bg-[#f85559] flex items-center justify-between lg:w-[90%] mx-auto h-32 rounded-[600px] p-4 lg:p-12">
@@ -144,7 +147,6 @@
         </div>
     </header>
 
-
     <main class="w-[90%] mx-auto mt-20 lg:mt-32">
       <!-- deals -->
       <div class="flex flex-col md:flex-row justify-between">
@@ -190,7 +192,7 @@
         <!-- 1st fruit -->
         <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219] ">
           <img src="resouces/fruit6.png" alt="">
-          <p>12.90$ - 18.85$</p>
+          <p class="text-2xl font-bold">12.90$ - 18.85$</p>
           <p>Apples</p>
           <!-- star icons -->
           <div class="flex justify-center w-6 h-6">
@@ -202,28 +204,40 @@
           </div>
 
           <!-- details -->
-          <div class="">
-            <button class="text-[#f85559] " onclick="my_modal_1.showModal()">Details</button>
-            <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
+          <div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-[#f85559]" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box py-[70px] px-[100px] text-center items-center">
+                <img class="mx-auto w-auto" src="resouces/fruit6.png" alt="">
+                <h3 class="font-bold text-lg">Apple</h3>
+                <p class="py-4">Professional employers are there to choose your right  fruits</p>
+                <!-- star icons -->
+                <div class="flex justify-center w-6 h-6 mx-auto">
+                  <img src="resouces/star.png" alt="">
+                  <img src="resouces/star half.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                </div>
+                <div class="modal-action flex justify-center">
+                  <form class="flex justify-around gap-6" method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-[#f85559]  font-extrabold border-solid border-[1px] border-[#f85559] px-7 py-5 rounded-2xl" >Close</button>
+                    <button class="text-white  font-extrabold rounded-2xl bg-[#f85559] px-7 py-5">Buy Now</button>
+                  </form>
+                </div>
               </div>
-            </div>
             </dialog>
           </div>
+
         </div>
 
         <!-- 2nd fruit -->
-        <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219]">
+        <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219] ">
           <img src="resouces/fruit7.png" alt="">
-          <p>12.90$ - 18.85$</p>
-          <p>Orange</p>
+          <p class="text-2xl font-bold">12.90$ - 18.85$</p>
+          <p>Oranges</p>
           <!-- star icons -->
           <div class="flex justify-center w-6 h-6">
             <img src="resouces/star.png" alt="">
@@ -234,61 +248,83 @@
           </div>
 
           <!-- details -->
-          <div class="">
-            <button class="text-[#f85559] " onclick="my_modal_1.showModal()">Details</button>
-          <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
+          <div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-[#f85559]" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box py-[70px] px-[100px] text-center items-center">
+                <img class="mx-auto w-auto" src="resouces/fruit7.png" alt="">
+                <h3 class="font-bold text-lg">Orange</h3>
+                <p class="py-4">Professional employers are there to choose your right  fruits</p>
+                <!-- star icons -->
+                <div class="flex justify-center w-6 h-6 mx-auto">
+                  <img src="resouces/star.png" alt="">
+                  <img src="resouces/star half.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                </div>
+                <div class="modal-action flex justify-center">
+                  <form class="flex justify-around gap-6" method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-[#f85559]  font-extrabold border-solid border-[1px] border-[#f85559] px-7 py-5 rounded-2xl" >Close</button>
+                    <button class="text-white  font-extrabold rounded-2xl bg-[#f85559] px-7 py-5">Buy Now</button>
+                  </form>
+                </div>
               </div>
-            </div>
-          </dialog>
-          </div>
-          
-        </div>
-
-        <!-- 3rd fruit -->
-        <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219]">
-          <img src="resouces/fruit8.png" alt="">
-          <p>12.90$ - 18.85$</p>
-          <p>Red Dragon</p>
-          <!-- star icons -->
-          <div class="flex justify-center w-6 h-6">
-            <img src="resouces/star.png" alt="">
-            <img src="resouces/star half.png" alt="">
-            <img src="resouces/star blank.png" alt="">
-            <img src="resouces/star blank.png" alt="">
-            <img src="resouces/star blank.png" alt="">
-          </div>
-
-          <!-- details -->
-          <div class="">
-            <button class="text-[#f85559] " onclick="my_modal_1.showModal()">Details</button>
-            <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
-              </div>
-            </div>
             </dialog>
           </div>
 
         </div>
         
-        <!-- 4th fruit -->
-        <div class=" flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219]">
+        <!-- 3rd fruit -->
+        <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219] ">
+          <img src="resouces/fruit8.png" alt="">
+          <p class="text-2xl font-bold">12.90$ - 18.85$</p>
+          <p>Red Dragons</p>
+          <!-- star icons -->
+          <div class="flex justify-center w-6 h-6">
+            <img src="resouces/star.png" alt="">
+            <img src="resouces/star half.png" alt="">
+            <img src="resouces/star blank.png" alt="">
+            <img src="resouces/star blank.png" alt="">
+            <img src="resouces/star blank.png" alt="">
+          </div>
+
+          <!-- details -->
+          <div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-[#f85559]" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box py-[70px] px-[100px] text-center items-center">
+                <img class="mx-auto w-auto" src="resouces/fruit8.png" alt="">
+                <h3 class="font-bold text-lg">Red Dragon</h3>
+                <p class="py-4">Professional employers are there to choose your right  fruits</p>
+                <!-- star icons -->
+                <div class="flex justify-center w-6 h-6 mx-auto">
+                  <img src="resouces/star.png" alt="">
+                  <img src="resouces/star half.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                </div>
+                <div class="modal-action flex justify-center">
+                  <form class="flex justify-around gap-6" method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-[#f85559]  font-extrabold border-solid border-[1px] border-[#f85559] px-7 py-5 rounded-2xl" >Close</button>
+                    <button class="text-white  font-extrabold rounded-2xl bg-[#f85559] px-7 py-5">Buy Now</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+
+        </div>
+
+        <!-- 4rth fruit -->
+        <div class="flex flex-col items-center justify-center p-12 rounded-lg border-solid border-[1px] border-[#12121219] ">
           <img src="resouces/fruit9.png" alt="">
-          <p>12.90$ - 18.85$</p>
+          <p class="text-2xl font-bold">12.90$ - 18.85$</p>
           <p>Banana</p>
           <!-- star icons -->
           <div class="flex justify-center w-6 h-6">
@@ -300,26 +336,34 @@
           </div>
 
           <!-- details -->
-          <div class="">
-            <button class="text-[#f85559] " onclick="my_modal_1.showModal()">Details</button>
-            <dialog id="my_modal_1" class="modal">
-            <div class="modal-box">
-              <h3 class="font-bold text-lg">Hello!</h3>
-              <p class="py-4">Press ESC key or click the button below to close</p>
-              <div class="modal-action">
-                <form method="dialog">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
-                </form>
+          <div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="text-[#f85559]" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box py-[70px] px-[100px] text-center items-center">
+                <img class="mx-auto w-auto" src="resouces/fruit9.png" alt="">
+                <h3 class="font-bold text-lg">Banana</h3>
+                <p class="py-4">Professional employers are there to choose your right  fruits</p>
+                <!-- star icons -->
+                <div class="flex justify-center w-6 h-6 mx-auto">
+                  <img src="resouces/star.png" alt="">
+                  <img src="resouces/star half.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                  <img src="resouces/star blank.png" alt="">
+                </div>
+                <div class="modal-action flex justify-center">
+                  <form class="flex justify-around gap-6" method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-[#f85559]  font-extrabold border-solid border-[1px] border-[#f85559] px-7 py-5 rounded-2xl" >Close</button>
+                    <button class="text-white  font-extrabold rounded-2xl bg-[#f85559] px-7 py-5">Buy Now</button>
+                  </form>
+                </div>
               </div>
-            </div>
             </dialog>
           </div>
-        
 
         </div>
-        
-        
 
       </div>
 
@@ -336,7 +380,7 @@
           <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="absolute top-[24%] md:top-[55%] left-[15%]  flex flex-col md:flex-row justify-center gap-5 lg:gap-32">
+        <div class="absolute top-[24%] md:top-[110%] lg:top-[55%] md:left-0 lg:left-[15%]  flex flex-col md:flex-row justify-center gap-5 lg:gap-32 md:text-black lg:text-white ">
           <!-- 1st person -->
           <div class="flex flex-col items-center justify-center ">
             <img class="" src="resouces/member1.png" alt="">
@@ -373,6 +417,124 @@
 
       </div>
 
+      <!-- why choose us -->
+      <div class="my-12 w-[90%] mx-auto md:mt-[300px] lg:mt-0">
+
+        <div class="text-center mb-7">
+          <h2 class="text-5xl font-extrabold mb-3">Why Choose Us</h2>
+          <p class="text-[#12121299] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+
+        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-12">
+
+          <!-- first column  -->
+          <div class="space-y-8">
+
+            <div class="flex items-center gap-6 ">
+              <i class="fa-solid fa-people-group"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-6 ">
+              <i class="fa-solid fa-heart"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">Fresh is Best</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-6 ">
+              <i class="fa-solid fa-gift"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">Gift Certificates</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 2nd column -->
+          <div class="">
+            <img src="resouces/whychoose1.png" alt="">
+          </div>
+
+          <!-- 3rd colum -->
+          <div class="space-y-8">
+
+            <div class="flex flex-row-reverse items-center gap-6 ">
+              <i class="fa-solid fa-truck-field-un"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">Integrated Supplier</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row-reverse items-center gap-6 ">
+              <i class="fa-solid fa-ice-cream"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">Sustainable Practice</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row-reverse items-center gap-6 ">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <div class="space-y-2">
+              <h2 class="text-2xl font-extrabold">The Benefits Only</h2>
+              <div class="h-[1px] w-24 bg-[#121212cc]"></div>
+              <p class="text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
     </main>
+
+    <footer class="text-center text-white bg-black p-14">
+      <!-- logo -->
+      <div class="flex items-center justify-center gap-6  ">
+        <img src="resouces/logo.png" alt="">
+        <h2 class="text-4xl font-bold">Fruit Burst</h2>
+      </div>
+
+      <!-- links -->
+      <div>
+        <ul class="flex flex-wrap justify-center gap-5 md:gap-10 my-6">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">My Account</a></li>
+        </ul>
+      </div>
+
+      <!-- social logos -->
+      <div class="flex gap-6 justify-center mt-10 ">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-apple"></i>
+      </div>
+
+    </footer>
+
+
+</body>
       
          
